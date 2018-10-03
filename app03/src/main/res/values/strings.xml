@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App03</string>
+    <string name="operator">乘以</string>
+    <string name="caculator">计算</string>
+    <string name="exit">退出</string>
+    <string name="about">关于</string>
+</resources>

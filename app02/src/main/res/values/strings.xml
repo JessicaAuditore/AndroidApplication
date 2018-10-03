@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App02</string>
+    <string name="login">登      录</string>
+    <string name="sendMsg">发 送 短 信</string>
+</resources>
