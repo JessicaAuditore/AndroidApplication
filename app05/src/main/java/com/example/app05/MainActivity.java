@@ -1,8 +1,11 @@
 package com.example.app05;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -75,7 +78,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         listview.setOnItemClickListener(listViewListener);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private void initNotification() {
+        nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        NotificationChannel channel = new NotificationChannel("CHANNEL ID", "CHANNEL NAME", NotificationManager.IMPORTANCE_HIGH);
+        nm.createNotificationChannel(channel);
+        //创建通知
         notify = new NotificationCompat.Builder(this, "CHANNEL ID")
                 //设置打开通知，该通知自动消失
                 .setAutoCancel(true)
