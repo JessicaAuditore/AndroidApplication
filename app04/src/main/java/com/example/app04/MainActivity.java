@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             this.views = views;
         }
 
+        @Override
         public int getCount() {
             return views.size();
         }
