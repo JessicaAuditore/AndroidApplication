@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">app05</string>
+    <string name="begin">下&#160;&#160;&#160;&#160;&#160;&#160;&#160;载</string>
+    <string name="newMsg">新消息</string>
+    <string name="finish">您的歌曲列表下载完成</string>
+    <string name="downlist">下载歌曲列表</string>
+    <string name="downloadbackground">后台下载</string>
+</resources>
