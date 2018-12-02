@@ -14,6 +14,7 @@ public class FileUtils {
             dir.mkdir();
         }
         File file = new File(SDPATH + path + "/" + fileName);
+        System.out.println("SDPATH:" + SDPATH);
         System.out.println(file.getAbsolutePath());
         if (!file.exists()) {
             file.createNewFile();

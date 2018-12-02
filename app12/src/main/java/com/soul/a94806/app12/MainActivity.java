@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final String mp3Addr = "http://file3.data.weipan.cn/57277001/96e7eaa76fa61c6b617543dade3aad55d2a32c8c?ip=1543391848,223.104.4.46&ssig=Xvky6TQr4r&Expires=1543392448&KID=sae,l30zoo1wmz&fn=%E6%A9%84%E6%A6%84%E6%A0%91.mp3&se_ip_debug=223.104.4.46&from=1221134";
+        final String mp3Addr ="http://file3.data.weipan.cn/79616382/74f912857d228ae0b598fcc90ff6dd1d93cf8a5b?ip=1543745948,58.212.196.249&ssig=pDV6E56atP&Expires=1543746548&KID=sae,l30zoo1wmz&fn=%E9%BD%90%E8%B1%AB+-+%E6%A9%84%E6%A6%84%E6%A0%91.mp3&se_ip_debug=58.212.196.249&from=1221134";
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
