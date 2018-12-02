@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
             i = i + 10;
             Message msg = updateBarHandler.obtainMessage();
             msg.arg1 = i;
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            updateBarHandler.sendMessage(msg);
+//            try {
+//                Thread.sleep(1000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+            updateBarHandler.sendMessageDelayed(msg,1000);
             if (i == 100) {
                 updateBarHandler.removeCallbacks(updateThread);
                 bar.setVisibility(View.GONE);
