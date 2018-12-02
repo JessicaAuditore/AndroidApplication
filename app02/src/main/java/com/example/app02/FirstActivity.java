@@ -13,8 +13,8 @@ public class FirstActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
-        Button button1 = (Button) findViewById(R.id.button1);
-        Button button2 = (Button) findViewById(R.id.button2);
+        Button button1 = findViewById(R.id.button1);
+        Button button2 = findViewById(R.id.button2);
         button1.setOnClickListener(new Button1Listener());
         button2.setOnClickListener(new Button2Listener());
     }

@@ -11,9 +11,9 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        TextView myTextView=(TextView)findViewById(R.id.myTextView);
-        Intent intent=getIntent();
-        String temp=intent.getStringExtra("key");
+        TextView myTextView = findViewById(R.id.myTextView);
+        Intent intent = getIntent();
+        String temp = intent.getStringExtra("key");
         myTextView.setText(temp);
     }
 }
