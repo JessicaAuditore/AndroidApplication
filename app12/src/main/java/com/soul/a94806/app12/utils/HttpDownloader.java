@@ -1,5 +1,10 @@
 package com.soul.a94806.app12.utils;
 
+import android.app.Activity;
+import android.os.Handler;
+import android.widget.Toast;
+import com.soul.a94806.app12.MainActivity;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,11 +16,13 @@ public class HttpDownloader implements Runnable {
     private String urlStr;
     private String path;
     private String fileName;
+    private Handler handler;
 
-    public HttpDownloader(String urlStr, String path, String fileName) {
+    public HttpDownloader(String urlStr, String path, String fileName, Handler handler) {
         this.urlStr = urlStr;
         this.path = path;
         this.fileName = fileName;
+        this.handler = handler;
     }
 
     @Override
@@ -36,6 +43,8 @@ public class HttpDownloader implements Runnable {
                 if (resultFile == null) {
                     System.out.println("下载失败");
                     return;
+                } else {
+                    handler.sendEmptyMessage(0x123);
                 }
             } catch (IOException e) {
                 e.printStackTrace();
