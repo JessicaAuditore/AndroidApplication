@@ -15,4 +15,6 @@ public class MainActivity extends AppCompatActivity {
         button1.setText(R.string.getVerifyCode);
         button2.setText(R.string.login);
     }
+
+
 }
